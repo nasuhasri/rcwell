@@ -33,13 +33,20 @@
         </div>
 
         <button type="submit" class="btn btn-primary">Classify</button>
+        <input type="reset" class="btn btn-outline-dark" />
       </form>
 
-      <div id="loading"></div>
+      <div id="loading" class="mb-2"></div>
 
-      <p class="text-center" id="demo">Demo result will be appeared here</p>
+      <p class="text-center alert alert-primary alert-link mt-3 mb-3" id="demo">
+        Demo result will be appeared here
+      </p>
+      <!-- <div class="alert alert-primary w-50 text-center mt-3" role="alert">
+        <p class="alert-link" id="demo">Demo result will be appeared here</p>
+      </div> -->
 
-      <table class="table mt-5" id="displayTable">
+      <h4 class="mt-5">Demo Text</h4>
+      <table class="table mb-5" id="displayTable">
         <thead>
           <tr>
             <th scope="col">#</th>
@@ -64,6 +71,18 @@
           </tr> -->
         </tbody>
       </table>
+
+      <h4 class="mt-5 mb-3">Sample Text To Test</h4>
+      <ul>
+        <li>
+          Please stop. If you continue to vandalize Wikipedia, as you did to
+          Kmart, you will be blocked from editing.
+        </li>
+        <li>
+          I respect your point of view, and when this discussion originated on
+          8th April I would have tended to agree with you.
+        </li>
+      </ul>
     </div>
 
     <script src="index.js"></script>
