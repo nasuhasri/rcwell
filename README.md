@@ -1,2 +1,2 @@
 # rcwell
- Sample project for runcloud
+ Sample project for runcloud deployment
