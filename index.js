@@ -2,21 +2,6 @@
 
 const threshold = 0.9;
 
-// const samples = [
-//   {
-//     id: '002261b0415c4f9d',
-//     text: "We're dudes on computers, moron.  You are quite astonishingly stupid.",
-//   },
-//   {
-//     id: '0027160ca62626bc',
-//     text: 'Please stop. If you continue to vandalize Wikipedia, as you did to Kmart, you will be blocked from editing.',
-//   },
-//   {
-//     id: '002fb627b19c4c0b',
-//     text: 'I respect your point of view, and when this discussion originated on 8th April I would have tended to agree with you.',
-//   },
-// ];
-
 // demo result
 toxicity.load(threshold).then((model) => {
   const sentences = [
@@ -42,8 +27,9 @@ toxicity.load(threshold).then((model) => {
         probabilityNum = predictions[i].results[0].probabilities[1].toFixed(2);
 
         text +=
+          'Your comment is classified as ' +
           labelText +
-          ' was found with probability of ' +
+          ' with probability of ' +
           probabilityNum +
           ' <br>';
 
@@ -154,7 +140,11 @@ function fetchHandler(event) {
         probability = predictions[i].results[0].probabilities[1].toFixed(2);
 
         text +=
-          label + ' was found with probability of ' + probability + ' <br>';
+          'Your comment is classified as ' +
+          label +
+          ' with probability of ' +
+          probability +
+          ' <br>';
 
         document.getElementById('demo').innerHTML = text;
       } else {
