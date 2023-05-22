@@ -6,7 +6,7 @@
   <h3 align="center">RCWell - Predict MY Comments</h3>
 
   <p align="center">
-    A sample project for runcloud deployment using Machine Learning model. This project is represented for RunCloud Young Technovation (RCYT) which was held in Jomlaunch 2022. The main purpose of this project is to show how we can use pre-trained Machine Learning models to be integrated with web development. It is simply built using HTML, Javascript and PHP languages. The pre-trained Machine Learning model used in this project is toxicity model where you can read it more [here](https://www.tensorflow.org/js/models).
+    A sample project for runcloud deployment using Machine Learning model. This project is represented for RunCloud Young Technovation (RCYT) which was held in Jomlaunch 2022. The main purpose of this project is to show how we can use pre-trained Machine Learning models to be integrated with web development. It is simply built using HTML, Javascript and PHP languages. The pre-trained Machine Learning model used in this project is toxicity model where you can read it more <a href="https://www.tensorflow.org/js/models" target="_blank">here</a>.
   </p>
 </div>
 
